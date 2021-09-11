@@ -1,0 +1,22 @@
+:root{
+    --logo: rgb(205, 139, 79);
+}
+
+.colorLogo{
+    border-color: var(--logo);
+    color: var(--logo);
+    background-color: white;
+}
+
+.colorLink{
+    text-decoration: none;
+    color:#555;
+}
+.colorLink:hover{
+    color: var(--logo);
+}
+
+.colorLogo:hover{
+    background-color: var(--logo);
+    border-color: var(--logo);
+}
