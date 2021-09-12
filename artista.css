@@ -93,6 +93,10 @@ body {
     margin-top: 100px;
 }
 
+.left{
+    margin-left: 200px;
+}
+
 * {
     font-family: "PT Serif", serif;
   }
