@@ -1,86 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="./plantilla.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link href="./plantilla.css" rel="stylesheet" />
     <title>Login</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand fs-3" href="index.html">
-          <img src="./Design/Icons/Logo.png" alt="" width="70" height="50" class="d-inline-block align-text-middle">
+          <img
+            src="./Design/Icons/Logo.png"
+            alt=""
+            width="70"
+            height="50"
+            class="d-inline-block align-text-middle"
+          />
           Art Auction
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 200px"
+          >
             <li class="nav-item">
-              <a class="nav-link active colorLink fs-5" aria-current="page" href="index.html">Home</a>
+              <a
+                class="nav-link active colorLink fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-5" aria-current="page" href="./gallery.html">Gallery</a>
+              <a
+                class="nav-link active fs-5"
+                aria-current="page"
+                href="./gallery.html"
+                >Gallery</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-5" aria-current="page" href="artists.html">Auctions</a>
+              <a
+                class="nav-link active fs-5"
+                aria-current="page"
+                href="artists.html"
+                >Auctions</a
+              >
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-2 fs-5" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success colorLogo fs-5" type="submit" >Search</button>
+            <input
+              class="form-control me-2 fs-5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success colorLogo fs-5"
+              type="submit"
+            >
+              Search
+            </button>
           </form>
-              <a class="nav-link active text-secondary fs-5" aria-current="page" href="./login.html">Login</a>
+          <a
+            class="nav-link active text-secondary fs-5"
+            aria-current="page"
+            href="./login.html"
+            >Login</a
+          >
         </div>
       </div>
     </nav>
 
-
     <!--Logo Login-->
-    <img src="./Design/Icons/Logo.png" class="rounded mx-auto d-block" alt="...">
+    <img
+      src="./Design/Icons/Logo.png"
+      class="rounded mx-auto d-block"
+      alt="..."
+    />
     <p class="fs-1 text-center">Login</p>
 
     <!--Forms-->
-    <form class="mx-auto fs-3" style="width: 600px;">
+    <form class="mx-auto fs-3" style="width: 600px">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label fs-3">Email address</label>
-        <input type="email" class="form-control is-invalid" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        <div class="invalid-feedback">
-          Please fill in a valid email address
+        <label for="exampleInputEmail1" class="form-label fs-3"
+          >Email address</label
+        >
+        <input
+          type="email"
+          class="form-control is-invalid"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
         </div>
+        <div class="invalid-feedback">Please fill in a valid email address</div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label fs-3">Password</label>
-        <input type="password" class="form-control is-invalid" id="exampleInputPassword1">
-        <div class="invalid-feedback">
-          Please fill in a valid password
-        </div>
+        <label for="exampleInputPassword1" class="form-label fs-3"
+          >Password</label
+        >
+        <input
+          type="password"
+          class="form-control is-invalid"
+          id="exampleInputPassword1"
+        />
+        <div class="invalid-feedback">Please fill in a valid password</div>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input colorLogo colorCheck" id="exampleCheck1">
-        <label class="form-check-label fs-4" for="exampleCheck1">Keep me signed in</label>
+        <input
+          type="checkbox"
+          class="form-check-input colorLogo colorCheck"
+          id="exampleCheck1"
+        />
+        <label class="form-check-label fs-4" for="exampleCheck1"
+          >Keep me signed in</label
+        >
       </div>
       <div class="col text-center">
-        <button type="submit" class="btn btn-primary colorLogo fs-4 mx-auto" style="width: 120px;">Submit</button>
+        <button
+          type="submit"
+          class="btn btn-primary colorLogo fs-4 mx-auto"
+          style="width: 120px"
+        >
+          Submit
+        </button>
       </div>
     </form>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
 

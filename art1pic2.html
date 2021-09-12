@@ -6,139 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="./plantilla.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link href="./plantilla.css" rel="stylesheet" />
     <title>The three heads of death</title>
-    
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-<body>
 
-  <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3" href="index.html">
-        <img src="./Design/Icons/Logo.png" alt="" width="70" height="50" class="d-inline-block align-text-middle">
-        Art Auction
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
-          <li class="nav-item">
-            <a class="nav-link active colorLink fs-5" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fs-5" aria-current="page" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fs-5" aria-current="page" href="artists.html">Auctions</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2 fs-5" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success colorLogo fs-5" type="submit" >Search</button>
-        </form>
-            <a class="nav-link active text-secondary fs-5" aria-current="page" href="login.html">Login</a>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="index.html">
+          <img
+            src="./Design/Icons/Logo.png"
+            alt=""
+            width="70"
+            height="50"
+            class="d-inline-block align-text-middle"
+          />
+          Art Auction
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active colorLink fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5"
+                aria-current="page"
+                href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fs-5"
+                aria-current="page"
+                href="artists.html"
+                >Auctions</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2 fs-5"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success colorLogo fs-5"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <a
+            class="nav-link active text-secondary fs-5"
+            aria-current="page"
+            href="login.html"
+            >Login</a
+          >
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
     <!--Master Container-->
     <div class="container d-flex flex-column align-content-between mx-auto">
-        <h1 class="d-block d-md-none mx-auto">
-            Item
-        </h1>
-        <div class="row mx-auto row-eq-height">
-            <div class="col-12 col-md d-flex flex-column">
-                <img class="auctionImage mx-auto" src="pictures/art1pic2.jpg" alt=""/>
-            </div>
-            <div class="col-12 col-md my-auto">
-                <form action="#" name="bidding" method="GET" id="form">
-                  <h2 class="d-none d-md-block mx-auto text-center">The three heads of death</h2>
-                  <p class="mx-auto text-center">Oil painting with wither rose colors</p>
-                  <h5 id="timer" class="mx-auto text-center"></h5>
-                  <!--Timer Script-->
-                  <script>
-                    var target = new Date("Sep 25, 2021 16:00:00").getTime();
-                    //updates every second
-                    var sec = setInterval(function(){
-
-                        //Gets current time
-                        var now = new Date().getTime();
-
-                        var timer = target - now;
-
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(timer/ (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((timer% (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((timer% (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((timer% (1000 * 60)) / 1000);
-
-                        // Display the result in the element with id="timer"
-                        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
-                                        
-                        // If the count down is finished, write some text
-                        if (timer < 0) {
-                        document.getElementById("timer").innerHTML = "00d 00h 00m 00s";
-                        }
-
-                    }, 1000);
-
-                  </script>
-                  <h6 class="mx-auto text-center"id="curBid">$8000</h6>
-                  <label for="txtBid">Place your bid</label>
-                  <input type="text" name="txtBid" id="currentBid">
-                  <input class="h-100 h-md-50 d-inline-block" type="submit" value="Bid" id="colorSubmit"> 
-                  <!--Value of current bid-->
-                  <script>
-                      function validate(){
-                        var bid = document.getElementById("currentBid").value;
-                        bid = bid.replace('$', '0');
-                        if(bid == ""){
-                              alert("Please provide an amount");
-                              return false;
-                        }
-                        bid = parseInt(bid);
-                        var current = document.getElementById("curBid").innerHTML;
-                        current = current.replace('$', '0');
-                        current = parseInt(current);
-                        if(current >= bid){
-                            alert("Please submit a higher amount");
-                            return false;
-                        }
-                        return true;
-                    };
-
-                    function getCurrentBid(){
-                        var bid = document.getElementById("currentBid").value;
-                        bid = bid.replace('$', '0');
-                        bid = parseInt(bid);
-                        return bid;
-                    };
-
-                        function logSubmit(event) {
-                                if (validate()){
-                                    var current = getCurrentBid();
-                                    log.textContent = `$${current}`;
-                                    event.preventDefault();
-                                }
-                                else{
-                                    event.preventDefault();
-                                }
-                            }
-                            const form = document.getElementById('form');
-                            const log = document.getElementById('curBid');
-                            form.addEventListener('submit', logSubmit);
-                  </script> 
-                </form>
-            </div>
+      <h1 class="d-block d-md-none mx-auto">The three heads of death</h1>
+      <div class="row mx-auto row-eq-height">
+        <div class="col-12 col-md d-flex flex-column">
+          <img
+            class="auctionImage mx-auto"
+            src="pictures/art1pic2.jpg"
+            alt=""
+          />
         </div>
+        <div class="col-12 col-md my-auto">
+          <form action="#" name="bidding" method="GET" id="form">
+            <h2 class="d-none d-md-block mx-auto text-center">
+              The three heads of death
+            </h2>
+            <p class="mx-auto text-center">
+              Oil painting with wither rose colors
+            </p>
+            <h5 id="timer" class="mx-auto text-center">.</h5>
+            <!--Timer Script-->
+            <script>
+              var target = new Date("Sep 25, 2021 16:00:00").getTime();
+              //updates every second
+              var sec = setInterval(function () {
+                //Gets current time
+                var now = new Date().getTime();
+
+                var timer = target - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(timer / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                  (timer % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                  (timer % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((timer % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="timer"
+                document.getElementById("timer").innerHTML =
+                  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (timer < 0) {
+                  document.getElementById("timer").innerHTML =
+                    "00d 00h 00m 00s";
+                }
+              }, 1000);
+            </script>
+            <h6 class="mx-auto text-center" id="curBid">$8000</h6>
+            <label for="currentBid">Place your bid</label>
+            <input type="text" name="txtBid" id="currentBid" />
+            <input
+              class="h-100 h-md-50 d-inline-block"
+              type="submit"
+              value="Bid"
+              id="colorSubmit"
+            />
+            <!--Value of current bid-->
+            <script>
+              function validate() {
+                var bid = document.getElementById("currentBid").value;
+                bid = bid.replace("$", "0");
+                if (bid == "") {
+                  alert("Please provide an amount");
+                  return false;
+                }
+                bid = parseInt(bid);
+                var current = document.getElementById("curBid").innerHTML;
+                current = current.replace("$", "0");
+                current = parseInt(current);
+                if (current >= bid) {
+                  alert("Please submit a higher amount");
+                  return false;
+                }
+                return true;
+              }
+
+              function getCurrentBid() {
+                var bid = document.getElementById("currentBid").value;
+                bid = bid.replace("$", "0");
+                bid = parseInt(bid);
+                return bid;
+              }
+
+              function logSubmit(event) {
+                if (validate()) {
+                  var current = getCurrentBid();
+                  log.textContent = `$${current}`;
+                  event.preventDefault();
+                } else {
+                  event.preventDefault();
+                }
+              }
+              const form = document.getElementById("form");
+              const log = document.getElementById("curBid");
+              form.addEventListener("submit", logSubmit);
+            </script>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!--FOOTER-->
@@ -148,44 +214,73 @@
           <div class="col-2">
             <h5>Section</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="index.html" class="nav-link colorLink">Home</a></li>
-              <li class="nav-item mb-2"><a href="gallery.html" class="nav-link colorLink">Gallery</a></li>
-              <li class="nav-item mb-2"><a href="artists.html" class="nav-link colorLink">Auction</a></li>
-              <li class="nav-item mb-2"><a href="login.html" class="nav-link colorLink">Login</a></li>
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link colorLink">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="gallery.html" class="nav-link colorLink">Gallery</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="artists.html" class="nav-link colorLink">Auction</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="login.html" class="nav-link colorLink">Login</a>
+              </li>
             </ul>
           </div>
-    
-          <div class="col-2">
-          </div>
-    
-          <div class="col-2">
-            
-          </div>
-    
+
+          <div class="col-2"></div>
+
+          <div class="col-2"></div>
+
           <div class="col-4 offset-1">
             <form>
               <h5>Subscribe to our newsletter</h5>
               <p>Monthly digest of whats new and exciting from us.</p>
               <div class="d-flex flex-column w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary colorLogo" type="button">Subscribe</button>
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary colorLogo" type="button">
+                  Subscribe
+                </button>
               </div>
             </form>
           </div>
         </div>
-    
+
         <div class="d-flex justify-content-between py-4 my-4 border-top">
           <p>&copy; 2021 Company, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" /></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" /></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" /></svg
+              ></a>
+            </li>
           </ul>
         </div>
       </footer>
     </div>
-      
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
