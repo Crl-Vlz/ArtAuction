@@ -1,101 +1,101 @@
-:root{
-    --logo: rgb(205, 139, 79);
+:root {
+  --logo: rgb(205, 139, 79);
 }
 
-.colorLogo{
-    border-color: var(--logo);
-    color: var(--logo);
-    background-color: white;
+* {
+  font-family: "PT Serif", serif;
 }
 
-.colorLink{
-    text-decoration: none;
-    color:#555;
+div {
+  font-family: "PT Sans", sans-serif;
 }
-.colorLink:hover{
-    color: var(--logo);
+
+label {
+  font-family: "PT Sans", sans-serif;
+}
+
+p.fs-1 {
+  font-family: "PT Serif", serif;
+}
+
+a.fs-3 {
+  font-family: "PT Serif", serif;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+label.fs-3 {
+  font-family: "PT Serif", serif;
+}
+label.fs-1 {
+  font-family: "PT Serif", serif;
+}
+
+a {
+  font-family: "PT Sans", sans-serif;
+}
+
+.colorLogo {
+  border-color: var(--logo);
+  color: var(--logo);
+  background-color: white;
+  outline: none;
+}
+
+.colorLink {
+  text-decoration: none;
+  color: #555;
+}
+.colorLink:hover {
+  color: var(--logo);
 }
 
 .colorLogo:hover {
-    background-color: var(--logo);
-    border-color: var(--logo);
-    outline: none;
-    border-color: var(--logo);
-    box-shadow: 0 0 10px var(--logo);
-    color: white;
-  }
-  
-  .colorLogo:checked {
-    background-color: var(--logo);
-    border-color: var(--logo);
-    box-shadow: var(--logo);
-    color: white;
-  }
-  
-  .colorLogo:focus {
-    outline: none;
-    border-color: var(--logo);
-    box-shadow: 0 0 10px var(--logo);
-    background-color: var(--logo);
-    color: white;
-  }
-  
-  .colorLogo:focus-visible {
-    outline: none;
-    border-color: var(--logo);
-    box-shadow: 0 0 10px var(--logo);
-    background-color: var(--logo);
-    color: white;
-  }
-  
-  .colorLogo:active {
-    outline: none;
-    border-color: var(--logo);
-    box-shadow: 0 0 10px var(--logo);
-    background-color: var(--logo);
-    color: white;
-  }
-  
-  .colorlogo:visited {
-    outline: none;
-    border-color: var(--logo);
-    box-shadow: 0 0 10px var(--logo);
-    background-color: var(--logo);
-    color: white;
-  }
-
-#colorSubmit{
-    background-color: white;
-    color: var(--logo);
-    border-radius: 0.3rem;
-    border-color: var(--logo);
-    box-shadow: none;
-    margin-top: 0.5rem;
-    width: 100%;
+  background-color: var(--logo);
+  border-color: var(--logo);
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  color: white;
 }
 
-#colorSubmit:hover{
-    background-color: var(--logo) !important;
-    color: #FFF !important;
+.colorLogo:checked {
+  background-color: var(--logo);
+  border-color: var(--logo);
+  box-shadow: var(--logo);
+  color: white;
 }
 
-img.indexImage{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.colorLogo:focus {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+  color: white;
 }
 
-img.indexImage:hover{
-    background-color: #AAA;
-    filter: grayscale(50%) contrast(1.2);
-    mix-blend-mode: multiply;
-    cursor: pointer;        
+.colorLogo:focus-visible {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+  color: white;
 }
 
-.stackedRow{
-    height: 50%;
+.colorLogo:active {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+  color: white;
 }
 
-.auctionImage{
-    width: 45vw;
+.colorlogo:visited {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+  color: white;
 }
