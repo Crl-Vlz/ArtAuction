@@ -75,13 +75,13 @@
                         var minutes = Math.floor((timer% (1000 * 60 * 60)) / (1000 * 60));
                         var seconds = Math.floor((timer% (1000 * 60)) / 1000);
 
-                        // Display the result in the element with id="demo"
+                        // Display the result in the element with id="timer"
                         document.getElementById("timer").innerHTML = days + "d " + hours + "h "
                         + minutes + "m " + seconds + "s ";
                                         
                         // If the count down is finished, write some text
                         if (timer < 0) {
-                        document.getElementById("demo").innerHTML = "00d 00h 00m 00s";
+                        document.getElementById("timer").innerHTML = "00d 00h 00m 00s";
                         }
 
                     }, 1000);
