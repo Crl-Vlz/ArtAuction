@@ -44,6 +44,14 @@ a {
   outline: none;
 }
 
+.colorLink {
+  text-decoration: none;
+  color: #555;
+}
+.colorLink:hover {
+  color: var(--logo);
+}
+
 .colorLogo:hover {
   background-color: var(--logo);
   border-color: var(--logo);
