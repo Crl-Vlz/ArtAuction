@@ -16,11 +16,53 @@
     color: var(--logo);
 }
 
-.colorLogo:hover{
-    color: white;
+.colorLogo:hover {
     background-color: var(--logo);
     border-color: var(--logo);
-}
+    outline: none;
+    border-color: var(--logo);
+    box-shadow: 0 0 10px var(--logo);
+    color: white;
+  }
+  
+  .colorLogo:checked {
+    background-color: var(--logo);
+    border-color: var(--logo);
+    box-shadow: var(--logo);
+    color: white;
+  }
+  
+  .colorLogo:focus {
+    outline: none;
+    border-color: var(--logo);
+    box-shadow: 0 0 10px var(--logo);
+    background-color: var(--logo);
+    color: white;
+  }
+  
+  .colorLogo:focus-visible {
+    outline: none;
+    border-color: var(--logo);
+    box-shadow: 0 0 10px var(--logo);
+    background-color: var(--logo);
+    color: white;
+  }
+  
+  .colorLogo:active {
+    outline: none;
+    border-color: var(--logo);
+    box-shadow: 0 0 10px var(--logo);
+    background-color: var(--logo);
+    color: white;
+  }
+  
+  .colorlogo:visited {
+    outline: none;
+    border-color: var(--logo);
+    box-shadow: 0 0 10px var(--logo);
+    background-color: var(--logo);
+    color: white;
+  }
 
 #colorSubmit{
     background-color: white;
