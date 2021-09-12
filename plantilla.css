@@ -17,8 +17,23 @@
 }
 
 .colorLogo:hover{
+    color: white;
     background-color: var(--logo);
     border-color: var(--logo);
+}
+
+#colorSubmit{
+    background-color: white;
+    color: var(--logo);
+    border-radius: 0.3rem;
+    border-color: var(--logo);
+    box-shadow: none;
+    margin-top: 0.5rem;
+}
+
+#colorSubmit:hover{
+    background-color: var(--logo) !important;
+    color: #FFF !important;
 }
 
 img.indexImage{
@@ -35,4 +50,8 @@ img.indexImage:hover{
 
 .stackedRow{
     height: 50%;
+}
+
+.auctionImage{
+    width: 45vw;
 }
