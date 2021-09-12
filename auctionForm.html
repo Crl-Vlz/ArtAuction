@@ -54,7 +54,7 @@
                 <img class="auctionImage" src="Media/Images/istockphoto-1331228629-612x612.jpg" alt=""/>
             </div>
             <div class="col-12 col-md my-auto">
-                <form action="#" name="bidding" method="GET" class="d-flex flex-column align-content-start">
+                <form action="#" name="bidding" method="GET" class="d-flex flex-column align-content-start" id="form">
                   <h2 class="d-none d-md-block">Item</h2>
                   <p>Description of the artwork</p>
                   <h5 id="timer"></h5>
@@ -88,28 +88,47 @@
                     }, 1000);
 
                   </script>
-                  <h6 id="bid">1000</h6>
+                  <h6 id="curBid">$1000</h6>
                   <label for="txtBid">Place your bid</label>
                   <input type="text" name="txtBid" id="currentBid">
                   <input type="submit" value="Bid" id="colorSubmit"> 
                   <!--Value of current bid-->
                   <script>
-                      function validate(x){
+                      function validate(){
                         var bid = document.getElementById("currentBid").value;
+                        bid = bid.replace('$', '0');
                         if(bid == ""){
-                              alert("Please provide an amount")
+                              alert("Please provide an amount");
+                              return false;
                         }
-                        bid = int(bid);
-                        var current = document.getElementById("bid").value;
-                        current = int(current);
+                        bid = parseInt(bid);
+                        var current = document.getElementById("curBid").innerHTML;
+                        current = current.replace('$', '0');
+                        current = parseInt(current);
                         if(current >= bid){
-                            alert("Please submit a higher amount")
+                            alert("Please submit a higher amount");
+                            return false;
                         }
-                        else{
-                            current = bid;
-                            document.getElementById("bid").innerHTML = current;
-                        }
-                      }
+                        return true;
+                    };
+
+                    function getCurrentBid(){
+                        var bid = document.getElementById("currentBid").value;
+                        bid = bid.replace('$', '0');
+                        bid = parseInt(bid);
+                        return bid;
+                    };
+
+                        function logSubmit(event) {
+                                if (validate()){
+                                    var current = getCurrentBid();
+                                    log.textContent = `$${current}`;
+                                    event.preventDefault();
+                                }
+                            }
+                            const form = document.getElementById('form');
+                            const log = document.getElementById('curBid');
+                            form.addEventListener('submit', logSubmit);
                   </script> 
                 </form>
             </div>
