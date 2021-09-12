@@ -2,6 +2,11 @@
   --logo: rgb(205, 139, 79);
 }
 
+* {
+  font-family: "PT Serif", serif !important;
+  font-family: "PT Sans", sans-serif;
+}
+
 .colorLogo {
   border-color: var(--logo);
   color: var(--logo);
