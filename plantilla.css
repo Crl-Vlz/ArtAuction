@@ -51,6 +51,9 @@ a {
 .colorLink:hover {
   color: var(--logo);
 }
+.colorLink:focus {
+  color: #555;
+}
 
 .colorLogo:hover {
   background-color: var(--logo);
