@@ -1,22 +1,60 @@
-:root{
-    --logo: rgb(205, 139, 79);
+:root {
+  --logo: rgb(205, 139, 79);
 }
 
-.colorLogo{
-    border-color: var(--logo);
-    color: var(--logo);
-    background-color: white;
+.colorLogo {
+  border-color: var(--logo);
+  color: var(--logo);
+  background-color: white;
+  outline: none;
 }
 
-.colorLink{
-    text-decoration: none;
-    color:#555;
+.colorLink {
+  text-decoration: none;
+  color: #555;
 }
-.colorLink:hover{
-    color: var(--logo);
+.colorLink:hover {
+  color: var(--logo);
 }
 
-.colorLogo:hover{
-    background-color: var(--logo);
-    border-color: var(--logo);
+.colorLogo:hover {
+  background-color: var(--logo);
+  border-color: var(--logo);
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+}
+
+.colorLogo:checked {
+  background-color: var(--logo);
+  border-color: var(--logo);
+  box-shadow: var(--logo);
+}
+
+.colorLogo:focus {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+}
+
+.colorLogo:focus-visible {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+}
+
+.colorLogo:active {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
+}
+
+.colorlogo:visited {
+  outline: none;
+  border-color: var(--logo);
+  box-shadow: 0 0 10px var(--logo);
+  background-color: var(--logo);
 }
