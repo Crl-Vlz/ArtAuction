@@ -3,7 +3,37 @@
 }
 
 * {
-  font-family: "PT Serif", serif !important;
+  font-family: "PT Serif", serif;
+}
+
+div {
+  font-family: "PT Sans", sans-serif;
+}
+
+label {
+  font-family: "PT Sans", sans-serif;
+}
+
+p.fs-1 {
+  font-family: "PT Serif", serif;
+}
+
+a.fs-3 {
+  font-family: "PT Serif", serif;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+label.fs-3 {
+  font-family: "PT Serif", serif;
+}
+label.fs-1 {
+  font-family: "PT Serif", serif;
+}
+
+a {
   font-family: "PT Sans", sans-serif;
 }
 
