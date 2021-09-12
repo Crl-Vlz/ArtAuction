@@ -80,7 +80,7 @@
                         + minutes + "m " + seconds + "s ";
                                         
                         // If the count down is finished, write some text
-                        if (distance < 0) {
+                        if (timer < 0) {
                         clearInterval(x);
                         document.getElementById("demo").innerHTML = "00d 00h 00m 00s";
                         }
@@ -88,21 +88,27 @@
                     }, 1000);
 
                   </script>
-                  <h6 id="bid"></h6>
+                  <h6 id="bid">1000</h6>
                   <label for="txtBid">Place your bid</label>
                   <input type="text" name="txtBid" id="currentBid">
                   <input type="submit" value="Bid" id="colorSubmit"> 
                   <!--Value of current bid-->
                   <script>
                       function validate(x){
-                        var bid = document.bidding.Bid.value;
+                        var bid = document.getElementById("currentBid").value;
                         if(bid == ""){
                               alert("Please provide an amount")
                         }
                         bid = int(bid);
-                        var current = document.bidding.txtBid.value;
+                        var current = document.getElementById("bid").value;
                         current = int(current);
-                        
+                        if(current >= bid){
+                            alert("Please submit a higher amount")
+                        }
+                        else{
+                            current = bid;
+                            document.getElementById("bid").innerHTML = current;
+                        }
                       }
                   </script> 
                 </form>
