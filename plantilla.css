@@ -29,6 +29,7 @@
     border-color: var(--logo);
     box-shadow: none;
     margin-top: 0.5rem;
+    width: 100%;
 }
 
 #colorSubmit:hover{

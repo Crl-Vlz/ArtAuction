@@ -50,14 +50,14 @@
             Item
         </h1>
         <div class="row mx-auto row-eq-height">
-            <div class="col-12 col-md">
-                <img class="auctionImage" src="Media/Images/istockphoto-1331228629-612x612.jpg" alt=""/>
+            <div class="col-12 col-md d-flex flex-column">
+                <img class="auctionImage mx-auto" src="Media/Images/istockphoto-1331228629-612x612.jpg" alt=""/>
             </div>
             <div class="col-12 col-md my-auto">
-                <form action="#" name="bidding" method="GET" class="d-flex flex-column align-content-start" id="form">
-                  <h2 class="d-none d-md-block">Item</h2>
-                  <p>Description of the artwork</p>
-                  <h5 id="timer"></h5>
+                <form action="#" name="bidding" method="GET" id="form">
+                  <h2 class="d-none d-md-block mx-auto text-center">Item</h2>
+                  <p class="mx-auto text-center">Description of the artwork</p>
+                  <h5 id="timer" class="mx-auto text-center"></h5>
                   <!--Timer Script-->
                   <script>
                     var target = new Date("Sep 13, 2021 11:00:00").getTime();
@@ -88,10 +88,10 @@
                     }, 1000);
 
                   </script>
-                  <h6 id="curBid">$1000</h6>
+                  <h6 class="mx-auto text-center"id="curBid">$1000</h6>
                   <label for="txtBid">Place your bid</label>
                   <input type="text" name="txtBid" id="currentBid">
-                  <input type="submit" value="Bid" id="colorSubmit"> 
+                  <input class="h-100 h-md-50 d-inline-block" type="submit" value="Bid" id="colorSubmit"> 
                   <!--Value of current bid-->
                   <script>
                       function validate(){
