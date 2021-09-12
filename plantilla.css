@@ -44,14 +44,6 @@ a {
   outline: none;
 }
 
-.colorLink {
-  text-decoration: none;
-  color: #555;
-}
-.colorLink:hover {
-  color: var(--logo);
-}
-
 .colorLogo:hover {
   background-color: var(--logo);
   border-color: var(--logo);
@@ -98,4 +90,40 @@ a {
   box-shadow: 0 0 10px var(--logo);
   background-color: var(--logo);
   color: white;
+}
+
+#colorSubmit {
+  background-color: white;
+  color: var(--logo);
+  border-radius: 0.3rem;
+  border-color: var(--logo);
+  box-shadow: none;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+#colorSubmit:hover {
+  background-color: var(--logo) !important;
+  color: #fff !important;
+}
+
+img.indexImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+img.indexImage:hover {
+  background-color: #aaa;
+  filter: grayscale(50%) contrast(1.2);
+  mix-blend-mode: multiply;
+  cursor: pointer;
+}
+
+.stackedRow {
+  height: 50%;
+}
+
+.auctionImage {
+  width: 45vw;
 }
