@@ -23,12 +23,14 @@
   outline: none;
   border-color: var(--logo);
   box-shadow: 0 0 10px var(--logo);
+  color: white;
 }
 
 .colorLogo:checked {
   background-color: var(--logo);
   border-color: var(--logo);
   box-shadow: var(--logo);
+  color: white;
 }
 
 .colorLogo:focus {
@@ -36,6 +38,7 @@
   border-color: var(--logo);
   box-shadow: 0 0 10px var(--logo);
   background-color: var(--logo);
+  color: white;
 }
 
 .colorLogo:focus-visible {
@@ -43,6 +46,7 @@
   border-color: var(--logo);
   box-shadow: 0 0 10px var(--logo);
   background-color: var(--logo);
+  color: white;
 }
 
 .colorLogo:active {
@@ -50,6 +54,7 @@
   border-color: var(--logo);
   box-shadow: 0 0 10px var(--logo);
   background-color: var(--logo);
+  color: white;
 }
 
 .colorlogo:visited {
@@ -57,4 +62,5 @@
   border-color: var(--logo);
   box-shadow: 0 0 10px var(--logo);
   background-color: var(--logo);
+  color: white;
 }
